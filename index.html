@@ -774,6 +774,13 @@ document.getElementById('application-form').addEventListener('submit', function(
         alert('Произошла ошибка: ' + error.message);
     });
 });
-</script>
+    
+   <!-- Перед закрывающим тегом body (строка ~272) -->
+    document.getElementById('sberLoginButton').addEventListener('click', function() {
+        alert('Интеграция с СберБизнес ID будет реализована на следующем этапе');
+        // Редирект для будущей интеграции:
+        // window.location.href = 'https://sberid.ru/...';
+    });
+</script> 
 </body>
 </html>
